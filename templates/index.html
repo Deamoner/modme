@@ -36,7 +36,7 @@
       <a href="index.html" class="logo"><img src="public/images/logodo.svg" alt="logo"/></a>
       <h2 class="modal-title">Check out how you would look in any race. </h2>
       <p class="modal-subtitle">Upload your pic and we will send you it as any race.</p>
-      <form class='form' name='doomoutForm' method='POST'><input type='hidden' name='form-name' value='doomoutForm' />
+      <form class='form' name='doomoutForm' method='POST' action="../uploader" enctype="multipart/form-data"><input type='hidden' name='form-name' value='doomoutForm' />
         <div class="group">
           <input type="text" id="firstName" name="first-name" placeholder="&nbsp;" autocomplete="off" required>
           <label for="first-name">Name</label>
@@ -48,8 +48,13 @@
           <span class="border"></span>
         </div>
         <div class="group">
-          <input type="email" name="email" placeholder="&nbsp;" autocomplete="off" required>
-          <label for="email">Email</label>
+          <input type="textbox" name="texter" placeholder="&nbsp;" autocomplete="off" required>
+          <label for="texter">Texter</label>
+          <span class="border"></span>
+        </div>
+        <div class="group">
+          <input type="file" name="fileToUpload" id="fileToUpload">
+          <label for="fileToUpload">File</label>
           <span class="border"></span>
         </div>
         <button type="submit" class="button">We are one world</button>
@@ -226,22 +231,9 @@
       $('body').toggleClass('no-scroll');
     });
 
-    // Reserve username form
-    $(".form").submit(function(e) {
-      e.preventDefault();
-      var $form = $(this);
-      $.post($form.attr("action"), $form.serialize()).then(function() {
-        $('.form-content').addClass('form-content-hide');
-        $('.success').addClass('success-show');
-      });
-    });
 
-    // Save user's first name
-    $(".form").submit(function(e) {
-      e.preventDefault();
-      var value = $("#firstName").val();
-      $('.first-name').text("Thank you," + " " + value + "!");
-    });
+
+
 
     // Feather icons
     feather.replace()
