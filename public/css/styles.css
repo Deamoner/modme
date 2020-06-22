@@ -1277,6 +1277,13 @@ button {
     width: 100%
 }
 
+.slide{
+    padding: 1200px 0 100px;
+    position: relative;
+    overflow: hidden;
+    width: 300px
+}
+
 .slider .slide img {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -1875,19 +1882,19 @@ a:hover {
 .flip-container{
     perspective:1000;
   }
-  
-  .flip-container:hover .flipper { 
-    transform: rotateY(180deg);  	
-  }  
-  
+
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+  }
+
   /*speed of transition*/
   .flipper{
-    transition: 1s;  	
-    transform-style: preserve-3d;    	
-    position: relative; 
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
   }
-  
-  .flip-container, .front, .back {  	
+
+  .flip-container, .front, .back {
     width: 200px;
     height: 100px;
     border-radius: 50%;
@@ -1895,21 +1902,21 @@ a:hover {
     background: gainsboro;
 
   }
-  
-  .front, .back {  	
-    backface-visibility: hidden;    	
-    position: absolute;  	
-    top: 0;  	
-     left: 0;  
+
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+     left: 0;
   }
-  
+
   .front {
     background: url('../images/logodo.png') no-repeat center;
-    z-index: 2; 
-  }    
-  
+    z-index: 2;
+  }
+
   .back {
-    background: url('../images/Doomout.png') no-repeat center; 
+    background: url('../images/Doomout.png') no-repeat center;
     -ms-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);

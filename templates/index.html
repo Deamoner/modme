@@ -38,21 +38,6 @@
       <p class="modal-subtitle">Upload your pic and we will send you it as any race.</p>
       <form class='form' name='doomoutForm' method='POST' action="../uploader" enctype="multipart/form-data"><input type='hidden' name='form-name' value='doomoutForm' />
         <div class="group">
-          <input type="text" id="firstName" name="first-name" placeholder="&nbsp;" autocomplete="off" required>
-          <label for="first-name">Name</label>
-          <span class="border"></span>
-        </div>
-        <div class="group">
-          <input type="email" name="email" placeholder="&nbsp;" autocomplete="off" required>
-          <label for="email">Email</label>
-          <span class="border"></span>
-        </div>
-        <div class="group">
-          <input type="textbox" name="texter" placeholder="&nbsp;" autocomplete="off" required>
-          <label for="texter">Texter</label>
-          <span class="border"></span>
-        </div>
-        <div class="group">
           <input type="file" name="fileToUpload" id="fileToUpload">
           <label for="fileToUpload">File</label>
           <span class="border"></span>
@@ -63,16 +48,22 @@
   </div>
 </div>
   <div class="content">
-    <a href="index.html" class="logo"><img src="public/images/logodo.png" alt="logo"/></a>
+    <a href="index.html" ><h1>PrivyFilter </h1>&nbsp;&nbsp;</a><a href="https://github.com/Deamoner/privyfilter"><img src="public/images/github.svg" width="75px"/> </a>
 
       <h2 class="title"></h2>
       <div class="cards">
-        <img src="public/images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay"/>
-        <img src="public/images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay"/>
+
         <div class="slider">
-          <div class="slide">Educate</div>
-          <div class="slide">Improve</div>
-          <div class="slide">Promote</div>
+          <div class="slide"><img src="public/images/past.jpg" width="400px"/></div>
+          <div class="slide"><img src="public/images/present.jpg" width="400px"/></div>
+          <div class="slide"><img src="public/images/future.jpg" width="400px"/></div>
+        </div>
+        <h3>Use privyfilter to diversify your image dataset to account for underlying bias, age, races, and other demographics.</h3>
+        <h4> Face Detection:Synthetic Face Generation:Face Swapping</h4>
+        <div class="slider">
+          <div class="slide"><img src="public/images/Gender Balance.jpg" width="400px"/></div>
+          <div class="slide"><img src="public/images/Coolness Balance.jpg" width="400px"/></div>
+          <div class="slide"><img src="public/images/Race Balance.jpg" width="400px"/></div>
         </div>
       </div>
 
@@ -89,6 +80,7 @@
           <b>we all hurt</b>
         </span>
       </h1>
+      <div>Try out our fun face swap demo.</div>
       <button class="button modal-toggle">Try now</button>
       <p class="subtitle"> More Options Coming <img src="public/images/logo-apple.svg" alt="apple"/></p>
     </div>
@@ -121,18 +113,18 @@
         <div class="row dos">
           <div class="feature"><i class="icon" data-feather="check"></i>Fair</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Ethical</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Non-bias</div>
+          <div class="feature"><i class="icon" data-feather="check"></i>low-bias</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Private</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Reserved</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Testable</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Compassionate</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Life Enhancer</div>
           <!-- Repeat-->
-          <div class="feature"><i class="icon" data-feather="check"></i>Fair</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Ethical</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Non-bias</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Private</div>
-          <div class="feature"><i class="icon" data-feather="check"></i>Reserved</div>
+          <div class="feature"><i class="icon" data-feather="check"></i>Sythetic Face Generation</div>
+          <div class="feature"><i class="icon" data-feather="check"></i>Demographic Est Extraction</div>
+          <div class="feature"><i class="icon" data-feather="check"></i>Face Detection</div>
+          <div class="feature"><i class="icon" data-feather="check"></i>Face Swap</div>
+          <div class="feature"><i class="icon" data-feather="check"></i>Meta Data Scrub</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Testable</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Compassionate</div>
           <div class="feature"><i class="icon" data-feather="check"></i>Life Enhancer</div>
@@ -141,46 +133,24 @@
       <!-- <p>If you’re looking for an email client with more features, try <a href="">these</a>.</p> -->
     </section>
     <section class="section section-providers">
-      <h2 class="title">Use with any and all of your email providers</h2>
-      <div class="cards">
-        <img src="public/images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay"/>
-        <img src="public/images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay"/>
-        <div class="slider">
-          <div class="slide"><img src="public/images/card-icloud.svg" alt="icloud"/></div>
-          <div class="slide"><img src="public/images/card-gmail.svg" alt="gmail"/></div>
-          <div class="slide"><img src="public/images/card-outlook.svg" alt="outlook"/></div>
-          <div class="slide"><img src="public/images/card-yahoo.svg" alt="yahooe"/></div>
-          <div class="slide"><img src="public/images/card-pop3.svg" alt="pop3"/></div>
-          <div class="slide"><img src="public/images/card-imap.svg" alt="imap"/></div>
-        </div>
+      <div class="hero">
+        <h1 class="title">Features: </h1>
+        <h1 class="title shift clip">
+          <span class="word-shift">
+            <b class="is-visible">Face Detection&nbsp;</b>
+            <b>Demographic Information Models</b>
+            <b>Sythetic Face Generation</b>
+            <b>Face Swapping</b>
+          </span>
+        </h1>
+        <div>Try out our fun face swap demo.</div>
+        <button class="button modal-toggle">Try now</button>
+        <p class="subtitle"> More Options Coming <img src="public/images/logo-apple.svg" alt="apple"/></p>
       </div>
     </section>
-    <section class="section imagery">
-      <h2 class="title">Celebrate Inbox Zero with beautiful imagery</h2>
-      <img src="public/images/overlay-bottom.svg" class="overlay-bottom hide-mobile" alt="overlay"/>
-      <div class="zero-slider">
-        <div class="slide"><img src="public/images/screen-illo-1.png" alt="inboxzero"/></div>
-        <div class="slide"><img src="public/images/screen-illo-2.png" alt="inboxzero"/></div>
-        <div class="slide"><img src="public/images/screen-illo-3.png" alt="inboxzero"/></div>
-        <div class="slide"><img src="public/images/screen-illo-4.png" alt="inboxzero"/></div>
-        <div class="slide"><img src="public/images/screen-illo-5.png" alt="inboxzero"/></div>
-        <div class="slide"><img src="public/images/screen-illo-6.png" alt="inboxzero"/></div>
-      </div>
-    </section>
-    <section class="section cta">
-      <div class="cta-content">
-        <h1 class="title">Join the beta, and start loving email again.</h1>
-        <button class="button white modal-toggle">Join the waitlist</button>
-        <p class="subtitle">Available soon for Mac <img src="public/images/logo-apple.svg" alt="apple"/></p>
-      </div>
-      <div class="zero-slider">
-        <div class="slide"><img src="public/images/screen-cta-1.jpg" alt="inboxzero"/></div>
-        <div class="slide"><img src="public/images/screen-cta-2.jpg" alt="inboxzero"/></div>
-        <div class="slide"><img src="public/images/screen-cta-3.jpg" alt="inboxzero"/></div>
-      </div>
-    </section>
+
     <footer class="footer">
-      <p>&copy; Doomout</p>
+      <p>&copy; Privyfilter</p>
     </footer>
     </div>
   </div>

@@ -27,12 +27,6 @@ def send_pulic(path):
 
 @app.route('/uploader', methods = ['POST'])
 def upload_file():
-   #print(request.files)
-   print(request.values)
-   if request.files:
-       print("got to files existing")
-   if request.method == 'GET':
-       print("we are making get requests")
    if request.method == 'POST':
       if request.files:
          f = request.files['fileToUpload']
@@ -42,7 +36,7 @@ def upload_file():
              handle, filename = tempfile.mkstemp()
              f.save(filename + filefullname)
              print(filename + filefullname)
-             swapimg = pf.swapFaces(filename + filefullname, "./assets/trump1.jpg")
+             swapimg = pf.swapFaces(filename + filefullname, "./assets/china1.jpg")
              here = cv2.imwrite("./public/results/" + id.hex + ".jpg", swapimg)
              return redirect("../public/results/" + id.hex + ".jpg")
    return "Uploaded file successfully."
