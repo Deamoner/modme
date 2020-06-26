@@ -16,7 +16,7 @@ Heroku Flask Template is a simple web app programmed in Python-3 using flask mic
   - mother teresa
   - Anne Frank
   - Maya Angelou
-  - Oprah 
+  - Oprah
   - Albert Einstein
   - Muhammad Ali
   - bruce lee
@@ -33,4 +33,4 @@ I tried to deploy several of my python applications to Heroku. But it was a disa
 
 ## License and Usage :
 
-This project is completely open-source and free-to-use. But you will need to mention about its great, super awesome author XD (JK, use it anywhere you want, I really don't care.) PS, Happy Coding!
+This project is completely open-source and free-to-use. But you will need to mention about its great, super awesome author Deamoner -  PS, Happy Coding!
