@@ -4,6 +4,7 @@ boost-py
 dlib>=19.3.0
 Flask
 Flask-RESTful
+scipy
 gunicorn
 itsdangerous
 Jinja2
