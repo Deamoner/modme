@@ -9,5 +9,6 @@ gunicorn
 itsdangerous
 Jinja2
 peewee
+uuid
 Werkzeug
 privyfilter

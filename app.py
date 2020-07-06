@@ -34,11 +34,20 @@ def upload_file():
              id = uuid.uuid1()
              filefullname = f.filename
              handle, filename = tempfile.mkstemp()
-             f.save(filename + filefullname)
-             print(filename + filefullname)
-             swapimg = pf.swapFaces(filename + filefullname, "./assets/china1.jpg")
-             here = cv2.imwrite("./public/results/" + id.hex + ".jpg", swapimg)
-             return redirect("../public/results/" + id.hex + ".jpg")
+             try:
+                 f.save(filename + filefullname)
+                 print(filename + filefullname)
+             except:
+                print(filename + filefullname)
+                print("Error occured saving file to tmp")
+                return "Bad upload Save"
+             try:
+                 swapimg = pf.swapFaces(filename + filefullname, "./assets/china1.jpg")
+                 here = cv2.imwrite("./public/results/" + id.hex + ".jpg", swapimg)
+                 return redirect("../public/results/" + id.hex + ".jpg")
+             except:
+                 print("Bad face swapping. ")
+                 return "Bad Face Swap"
    return "Uploaded file successfully."
 
 if __name__ == '__main__': app.run(debug=True)
