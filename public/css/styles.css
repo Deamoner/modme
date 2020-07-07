@@ -1821,11 +1821,12 @@ a:hover {
     }
 } */
 
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     .screen-wrapper {
         padding: 0 12%;
     }
 }
+*/
 
 
 .outerVideoWrapper2{
