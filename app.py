@@ -48,6 +48,8 @@ def upload_file():
              except:
                  print("Bad face swapping. ")
                  return "Bad Face Swap"
+        else:
+            return "Unsupported file type. Try Again."
    return "Uploaded file successfully."
 
 if __name__ == '__main__': app.run(debug=True)
